@@ -33,6 +33,9 @@ builder.Services.AddDbContext<TimbradoDbContext>(options =>
     }
 });
 
+builder.Services.AddScoped<IGatewayConfigService, GatewayConfigService>();
+builder.Services.AddSingleton<CryptoService>();
+
 // ===== CACHE =====
 builder.Services.AddMemoryCache();
 

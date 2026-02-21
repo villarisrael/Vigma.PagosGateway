@@ -120,8 +120,8 @@ namespace Vigma.PagosGateway.Models.Logging
         [Column("refunded")]
         public bool Refunded { get; set; } = false;
 
-        
-        [Column(TypeName = "decimal(18,2)")]
+
+        [Column("refund_amount")]
         public decimal? RefundAmount { get; set; }
 
         [Column("refund_date")]
